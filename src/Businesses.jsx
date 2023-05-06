@@ -1,8 +1,8 @@
 export default function Businesses()
 {
     return(
-        <div>
+        <h2 className="text-3xl font-bold underline">
             My Businesses
-        </div>
+        </h2>
     )
 }

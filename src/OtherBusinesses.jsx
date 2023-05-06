@@ -1,8 +1,10 @@
 export default function OtherBusinesses()
 {
     return(
-        <div>
-            Other Businesses
-        </div>
+        <>
+            <h2 className="text-3xl font-bold underline">
+                Other Businesses
+            </h2>
+        </>
     )
 }

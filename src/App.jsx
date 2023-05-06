@@ -1,4 +1,4 @@
-import './App.css'
+import './index.css'
 import Nav from './Nav'
 import About from './About'
 import Businesses from './Businesses'
@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <Nav />
-      <h1 className="text-5xl font-bold underline">
+      <h1 className="text-6xl font-bold underline">
         Serial Entrepreneur
       </h1>
       <About />
