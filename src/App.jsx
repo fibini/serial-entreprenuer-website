@@ -11,7 +11,7 @@ function App() {
     <>
       <Nav />
       <h1 className="text-6xl font-bold underline">
-        Serial Entrepreneur
+        The Serial Entrepreneur
       </h1>
       <About />
       <Businesses />
