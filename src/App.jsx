@@ -14,7 +14,7 @@ function App() {
       </h1>
       {/* <About /> */}
       {/* <Businesses /> */}
-      {/* <OtherBusinesses /> */}
+      <OtherBusinesses />
       <Contact />
     </>
   )

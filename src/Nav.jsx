@@ -49,10 +49,10 @@ export default function Nav() {
               <a href="#businesses" className="w-full text-center py-8 hover:opacity-50">My Businesses</a>
               </li>
               <li className="my-8 uppercase">
-              <a href="#otherbusinesses" className="w-full text-center py-8 hover:opacity-50">Other Businesses</a>
+              <a href="/otherbusinesses" className="w-full text-center py-8 hover:opacity-50">Other Businesses</a>
               </li>
               <li className="my-8 uppercase">
-              <a href="#contact" className="w-full text-center py-6 hover:opacity-50">Contact</a>
+              <a href="/contact" className="w-full text-center py-6 hover:opacity-50">Contact</a>
               </li>
             </ul>
           </div>
