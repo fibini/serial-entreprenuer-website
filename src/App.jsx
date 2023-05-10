@@ -9,13 +9,15 @@ function App() {
   return (
     <>
       <Nav />
-      <h1 className="text-6xl font-bold underline mb-10">
-        The Serial Entrepreneur
-      </h1>
-      {/* <About /> */}
-      {/* <Businesses /> */}
-      <OtherBusinesses />
-      <Contact />
+      <div className="sm:flex justify-center">
+        <h1 className="text-6xl font-bold underline my-10">
+          The Serial Entrepreneur
+        </h1>
+      </div>
+      <About />
+      <Businesses />
+      {/* <OtherBusinesses /> */}
+      {/* <Contact /> */}
     </>
   )
 }

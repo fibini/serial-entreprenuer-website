@@ -3,19 +3,17 @@ export default function About()
 {
     return(
         <>
-        <section id="about">
-            <h1 className="text-3xl font-bold underline">
+        <section id="about" className="text-center w-30">
+            <h1 className="text-3xl font-bold underline mb-5">
                 ABOUT ME
             </h1>
-            <div className="flex ml-10 mr-10">
+            <div className=" sm:flex justify-center ml-10 mr-10">
                 
-                    <img className="h-auto max-w-md" src="./src/assets/serialentrep.jpg"/>
+                    <img className="object-scale-down h-100 w-100" src="./src/assets/serialentrep.jpg"/>
                 
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, placeat mollitia sunt dicta tempora provident aliquid ea omnis aut repellat cum temporibus. Dolor molestiae omnis modi, ex nesciunt doloribus voluptatem.
                 Perferendis, recusandae exercitationem asperiores maiores sequi id amet aperiam labore itaque praesentium, soluta, impedit repellat dicta distinctio fuga adipisci. Obcaecati illo cum ratione dolores beatae sed explicabo quae possimus! Ea.
-                Optio voluptates at expedita velit id dolorum exercitationem enim sapiente tempora nesciunt? Dolorem perspiciatis esse quo, id sit quam ad deleniti dolores ipsam adipisci. Minima, sapiente. Deserunt id magnam dolorum!
-                Aspernatur quisquam porro dicta voluptatum hic amet, veniam deserunt suscipit nemo tempore placeat tempora optio qui rem officia obcaecati blanditiis rerum id dolores. Fugiat expedita sunt doloribus. Animi, corrupti esse.
-                Minima, adipisci. Consectetur tempore minus, enim nisi veniam, voluptatum laudantium sunt labore cum repudiandae quia quam nobis tempora eligendi excepturi assumenda dolores sit magni placeat ducimus! Dignissimos deleniti similique necessitatibus!</p>
+               </p>
             </div>
         </section>
     </>  

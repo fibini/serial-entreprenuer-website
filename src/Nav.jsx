@@ -4,12 +4,12 @@ export default function Nav() {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   return (
-    <div className="flex items-center justify-between border-b border-gray-400 py-8">
+    <div className="flex items-center justify-between border-b border-gray-400 py-8 h-5">
       <a href="/">
-        {/* <img src="https://designbygio.it/images/logo.png" alt="logo" /> */}
+        <img className="object-scale-down h-10" src="./src/assets/ceo.png" alt="logo" />
       </a>
       <nav>
-        <section className="MOBILE-MENU flex lg:hidden">
+        <section className="MOBILE-MENU flex md:hidden">
           <button id="hamburger-icon" className="text-4xl md:hidden cursor-pointer" onClick={() => setIsNavOpen((prev) => !prev)}> &#9776; </button>
           {/* <div
             className="HAMBURGER-ICON space-y-2"
@@ -49,27 +49,27 @@ export default function Nav() {
               <a href="#businesses" className="w-full text-center py-8 hover:opacity-50">My Businesses</a>
               </li>
               <li className="my-8 uppercase">
-              <a href="/otherbusinesses" className="w-full text-center py-8 hover:opacity-50">Other Businesses</a>
+              <a href="#otherbusinesses" className="w-full text-center py-8 hover:opacity-50">Other Businesses</a>
               </li>
               <li className="my-8 uppercase">
-              <a href="/contact" className="w-full text-center py-6 hover:opacity-50">Contact</a>
+              <a href="#contact" className="w-full text-center py-6 hover:opacity-50">Contact</a>
               </li>
             </ul>
           </div>
         </section>
 
-        <ul className="DESKTOP-MENU hidden space-x-8 lg:flex">
+        <ul className="DESKTOP-MENU hidden space-x-8 md:flex">
           <li>
-            <a href="/about">About</a>
+            <a href="#about">About</a>
           </li>
           <li>
-            <a href="/portfolio">My Businesses</a>
+            <a href="#businesses">My Businesses</a>
           </li>
           <li>
-            <a href="/portfolio">Other Businesses</a>
+            <a href="#otherbusinesses">Other Businesses</a>
           </li>
           <li>
-            <a href="/contact">Contact</a>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
       </nav>
