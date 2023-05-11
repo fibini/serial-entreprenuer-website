@@ -4,7 +4,7 @@ export default function OtherBusinesses()
 {
     return(
         <>
-        <section id="otherbusinesses" className=" h-screen">
+        <section id="otherbusinesses">
                 <div className="bg-black text-white text-center py-5">
                     <h2 className="text-3xl font-bold">
                         Other Businesses
