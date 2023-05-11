@@ -3,7 +3,7 @@ export default function About()
 {
     return(
         <>
-        <section id="about" className="text-center w-30">
+        <section id="about" className="text-center w-30 h-screen">
             <h1 className="text-3xl font-bold underline mb-5">
                 ABOUT ME
             </h1>

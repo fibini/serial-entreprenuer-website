@@ -1,10 +1,11 @@
 import { Carousel } from "flowbite-react"
+import apply from './assets/apply-yourself.png'
 
 export default function Businesses()
 {
     return(
         <>
-        <section id="businesses">
+        <section id="businesses" className="h-screen">
           <h2 className="text-3xl font-bold underline">
               My Businesses
           </h2>
@@ -16,10 +17,10 @@ export default function Businesses()
               alt="..."
               />
             </a>
-            <a href="https://www.facebook.com/Applyyourselfnow876" target="_blank" rel="noreferrer">
+            <a href="https://www.facebook.com/Applyyourselfnow876" target="_blank" rel="noreferrer" alt="applyimg">
               <img
               className="h-96"
-              src="./src/assets/apply-yourself.png"
+              src={apply}
               alt="..."
               />
             </a>
