@@ -4,7 +4,7 @@ export default function About()
 {
     return(
         <>
-        <section id="about" className="text-center w-30 h-screen">
+        <section id="about" className="text-center w-30 h-screen mb-10">
             {/* <div className="bg-black text-white"> */}
                 <h1 className="text-3xl font-bold bg-black text-white py-5">
                     ABOUT ME
