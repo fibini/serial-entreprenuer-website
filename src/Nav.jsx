@@ -1,4 +1,5 @@
 import { useState } from "react";
+import ceo from './assets/ceo.png'
 
 export default function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -6,7 +7,7 @@ export default function Nav() {
   return (
     <div className="flex items-center justify-between border-b border-gray-400 py-8 h-5">
       <a href="/">
-        <img className="object-scale-down h-10" src="./src/assets/ceo.png" alt="logo" />
+        <img className="object-scale-down h-10" src={ceo} alt="logo" />
       </a>
       <nav>
         <section className="MOBILE-MENU flex md:hidden">

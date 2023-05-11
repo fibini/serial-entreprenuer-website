@@ -1,5 +1,6 @@
 import { Carousel } from "flowbite-react"
 import apply from './assets/apply-yourself.png'
+import affordableAdvertising from './assets/advertising.png'
 
 export default function Businesses()
 {
@@ -13,15 +14,15 @@ export default function Businesses()
           <Carousel slideInterval={10000}>
             <a href="https://www.facebook.com/affordableadvertising20" target="_blank" rel="noreferrer">
               <img
-              src="./src/assets/advertising.png"
-              alt="..."
+              src={affordableAdvertising}
+              alt="advertising"
               />
             </a>
-            <a href="https://www.facebook.com/Applyyourselfnow876" target="_blank" rel="noreferrer" alt="applyimg">
+            <a href="https://www.facebook.com/Applyyourselfnow876" target="_blank" rel="noreferrer">
               <img
               className="h-96"
               src={apply}
-              alt="..."
+              alt="applyimg"
               />
             </a>
             <img
