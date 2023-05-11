@@ -1,3 +1,5 @@
+import advertise from "./assets/advertise-here2.jpg"
+
 export default function OtherBusinesses()
 {
     return(
@@ -9,14 +11,14 @@ export default function OtherBusinesses()
                     </h2>
                 </div>
                 <div className= "grid grid-rows-2 grid-flow-col gap-4">
-                    <img src="./src/assets/advertise-here2.jpg"/>
-                    <img src="./src/assets/advertise-here2.jpg"/>
-                    <img src="./src/assets/advertise-here2.jpg"/>
-                    <img src="./src/assets/advertise-here2.jpg"/>
-                    <img src="./src/assets/advertise-here2.jpg"/>
-                    <img src="./src/assets/advertise-here2.jpg"/>
-                    <img src="./src/assets/advertise-here2.jpg"/>
-                    <img src="./src/assets/advertise-here2.jpg"/>
+                    <img src={advertise}/>
+                    <img src={advertise}/>
+                    <img src={advertise}/>
+                    <img src={advertise}/>
+                    <img src={advertise}/>
+                    <img src={advertise}/>
+                    <img src={advertise}/>
+                    <img src={advertise}/>
                 </div>
             </section>
         </>
