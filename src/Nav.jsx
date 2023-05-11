@@ -11,7 +11,7 @@ export default function Nav() {
       </a>
       <nav>
         <section className="MOBILE-MENU flex md:hidden">
-          <button id="hamburger-icon" className="text-4xl md:hidden cursor-pointer" onClick={() => setMenuOpen((prev) => !prev)}> &#9776; </button>
+          <button id="hamburger-icon" className="text-white text-4xl md:hidden cursor-pointer" onClick={() => setMenuOpen((prev) => !prev)}> &#9776; </button>
           {/* <div
             className="HAMBURGER-ICON space-y-2"
             onClick={() => setMenuOpen((prev) => !prev)}

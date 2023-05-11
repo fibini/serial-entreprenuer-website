@@ -2,6 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+body
+{
+  background-color: black;
+}
+
+#about
+{
+  background-image: url(./assets/jamflag.jpeg);
+}
+
+#businesses
+{
+  background-image: url(./assets/viniflag.png);
+}
+
+
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

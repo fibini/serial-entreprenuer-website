@@ -9,14 +9,16 @@ function App() {
   return (
     <>
       <Nav />
-      <div className="sm:flex justify-center text-center">
-        <h1 className="text-6xl font-bold underline my-10">
-          The Serial Entrepreneur
-        </h1>
-      </div>
+      <section id="header" className="flex justify-center h-56 pt-5">
+        <div className="sm:flex text-center text-white">
+          <h1 className="text-6xl font-bold">
+            The Serial Entrepreneur
+          </h1>
+        </div>
+      </section>
       <About />
       <Businesses />
-      {/* <OtherBusinesses /> */}
+      <OtherBusinesses />
       {/* <Contact /> */}
     </>
   )
