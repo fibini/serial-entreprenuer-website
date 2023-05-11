@@ -2,15 +2,18 @@ import { Carousel } from "flowbite-react"
 import apply from './assets/apply-yourself.png'
 import affordableAdvertising from './assets/advertising.png'
 import tanup from './assets/tanup.png'
+import slimchances from './assets/slimchances.png'
 
 export default function Businesses()
 {
     return(
         <>
         <section id="businesses" className="h-screen">
-          <h2 className="text-3xl font-bold underline">
+          <div id="busi" className="bg-black text-white">
+          <h2 className="text-3xl font-bold text-center py-5">
               My Businesses
           </h2>
+          </div>
           <div className="h-96 2lg:h-96">
           <Carousel slideInterval={10000}>
             <a href="https://www.facebook.com/affordableadvertising20" target="_blank" rel="noreferrer">
@@ -33,10 +36,13 @@ export default function Businesses()
                 alt="tanupent"
               />
             </a>
-            <img
-              src="https://flowbite.com/docs/images/carousel/carousel-4.svg"
-              alt="..."
-            />
+            <a href="https://www.facebook.com/profile.php?id=100064482830532" target="_blank" rel="noreferrer">
+              <img
+                className="h-96"
+                src={slimchances}
+                alt="weight-loss"
+              />
+            </a>
             <img
               src="https://flowbite.com/docs/images/carousel/carousel-5.svg"
               alt="..."

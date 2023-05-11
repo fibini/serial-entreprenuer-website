@@ -6,7 +6,7 @@ export default function About()
         <>
         <section id="about" className="text-center w-30 h-screen">
             {/* <div className="bg-black text-white"> */}
-                <h1 className="text-3xl font-bold mb-5 bg-black text-white">
+                <h1 className="text-3xl font-bold bg-black text-white py-5">
                     ABOUT ME
                 </h1>
             {/* </div> */}
