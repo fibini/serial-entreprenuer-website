@@ -8,16 +8,21 @@ export default function Businesses()
           <h2 className="text-3xl font-bold underline">
               My Businesses
           </h2>
-          <div className="h-56 sm:h-64 xl:h-80 2lg:h-96">
-          <Carousel slideInterval={5000}>
-            <img
-              src="https://flowbite.com/docs/images/carousel/carousel-1.svg"
+          <div className="h-96 2lg:h-96">
+          <Carousel slideInterval={10000}>
+            <a href="https://www.facebook.com/affordableadvertising20" target="_blank" rel="noreferrer">
+              <img
+              src="./src/assets/advertising.png"
               alt="..."
-            />
-            <img
-              src="https://flowbite.com/docs/images/carousel/carousel-2.svg"
+              />
+            </a>
+            <a href="https://www.facebook.com/Applyyourselfnow876" target="_blank" rel="noreferrer">
+              <img
+              className="h-96"
+              src="./src/assets/apply-yourself.png"
               alt="..."
-            />
+              />
+            </a>
             <img
               src="https://flowbite.com/docs/images/carousel/carousel-3.svg"
               alt="..."
