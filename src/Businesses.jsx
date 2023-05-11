@@ -1,6 +1,7 @@
 import { Carousel } from "flowbite-react"
 import apply from './assets/apply-yourself.png'
 import affordableAdvertising from './assets/advertising.png'
+import tanup from './assets/tanup.png'
 
 export default function Businesses()
 {
@@ -25,10 +26,13 @@ export default function Businesses()
               alt="applyimg"
               />
             </a>
-            <img
-              src="https://flowbite.com/docs/images/carousel/carousel-3.svg"
-              alt="..."
-            />
+            <a href="https://www.facebook.com/profile.php?id=100064144205268" target="_blank" rel="noreferrer">
+              <img
+                className="h-96 w-screen"
+                src={tanup}
+                alt="tanupent"
+              />
+            </a>
             <img
               src="https://flowbite.com/docs/images/carousel/carousel-4.svg"
               alt="..."
