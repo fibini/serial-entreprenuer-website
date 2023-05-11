@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 export default function Nav() {
-  const [isNavOpen, setIsNavOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <div className="flex items-center justify-between border-b border-gray-400 py-8 h-5">
@@ -10,23 +10,23 @@ export default function Nav() {
       </a>
       <nav>
         <section className="MOBILE-MENU flex md:hidden">
-          <button id="hamburger-icon" className="text-4xl md:hidden cursor-pointer" onClick={() => setIsNavOpen((prev) => !prev)}> &#9776; </button>
+          <button id="hamburger-icon" className="text-4xl md:hidden cursor-pointer" onClick={() => setMenuOpen((prev) => !prev)}> &#9776; </button>
           {/* <div
             className="HAMBURGER-ICON space-y-2"
-            onClick={() => setIsNavOpen((prev) => !prev)}
+            onClick={() => setMenuOpen((prev) => !prev)}
           >
             <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
             <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
             <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
           </div> */}
 
-          <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"} >
-            <button className="absolute text-8xl top-0 right-0 px-8 py-8" onClick={() => setIsNavOpen(false)}>
+          <div className={menuOpen ? "showMenuNav" : "hideMenuNav"} >
+            <button className="absolute text-8xl top-0 right-0 px-8 py-8" onClick={() => setMenuOpen(false)}>
               &times;
             </button>
             {/* <div
               className="absolute top-0 right-0 px-8 py-8"
-              onClick={() => setIsNavOpen(false)}
+              onClick={() => setMenuOpen(false)}
             >
               <svg
                 className="h-8 w-8 text-gray-600"
@@ -42,17 +42,17 @@ export default function Nav() {
               </svg>
             </div> */}
             <ul className="flex flex-col items-center justify-between min-h-[250px]">
-              <li className="my-8 uppercase">
-              <a href="#about" className="w-full text-center py-8 hover:opacity-50">About</a>
+              <li className="my-8 uppercase text-3xl">
+              <a href="#about" className="w-full text-center py-8 hover:opacity-50" onClick={() => setMenuOpen(false)}>About</a>
               </li>
-              <li className = "my-8 uppercase">
-              <a href="#businesses" className="w-full text-center py-8 hover:opacity-50">My Businesses</a>
+              <li className = "my-8 uppercase text-3xl">
+              <a href="#businesses" className="w-full text-center py-8 hover:opacity-50" onClick={() => setMenuOpen(false)}>My Businesses</a>
               </li>
-              <li className="my-8 uppercase">
-              <a href="#otherbusinesses" className="w-full text-center py-8 hover:opacity-50">Other Businesses</a>
+              <li className="my-8 uppercase text-3xl">
+              <a href="#otherbusinesses" className="w-full text-center py-8 hover:opacity-50" onClick={() => setMenuOpen(false)}>Other Businesses</a>
               </li>
-              <li className="my-8 uppercase">
-              <a href="#contact" className="w-full text-center py-6 hover:opacity-50">Contact</a>
+              <li className="my-8 uppercase text-3xl">
+              <a href="#contact" className="w-full text-center py-6 hover:opacity-50" onClick={() => setMenuOpen(false)}>Contact</a>
               </li>
             </ul>
           </div>
@@ -79,7 +79,7 @@ export default function Nav() {
       }
       .showMenuNav {
         display: block;
-        position: absolute;
+        position: fixed;
         width: 100%;
         height: 100vh;
         top: 0;
