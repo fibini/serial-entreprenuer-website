@@ -12,7 +12,7 @@ export default function Businesses()
 {
     return(
         <>
-        <section id="businesses" className="mt-10">
+        <section id="businesses" className="pt-16">
           <div id="busi" className="bg-black text-white">
           <h2 className="text-3xl font-bold text-center py-5">
               My Businesses

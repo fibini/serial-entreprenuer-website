@@ -5,44 +5,18 @@ export default function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="flex items-center justify-between border-b border-gray-400 py-8 h-5">
+    <div className="flex items-center justify-between fixed w-full z-10 border-b border-gray-400 py-8 px px-3 h-5 bg-black">
       <a href="/">
         <img className="object-scale-down h-10" src={ceo} alt="logo" />
       </a>
       <nav>
         <section className="MOBILE-MENU flex md:hidden">
           <button id="hamburger-icon" className="text-white text-4xl md:hidden cursor-pointer" onClick={() => setMenuOpen((prev) => !prev)}> &#9776; </button>
-          {/* <div
-            className="HAMBURGER-ICON space-y-2"
-            onClick={() => setMenuOpen((prev) => !prev)}
-          >
-            <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
-            <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
-            <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
-          </div> */}
-
           <div className={menuOpen ? "showMenuNav" : "hideMenuNav"} >
             <button className="absolute text-8xl top-0 right-0 px-8 py-8" onClick={() => setMenuOpen(false)}>
               &times;
             </button>
-            {/* <div
-              className="absolute top-0 right-0 px-8 py-8"
-              onClick={() => setMenuOpen(false)}
-            >
-              <svg
-                className="h-8 w-8 text-gray-600"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <line x1="18" y1="6" x2="6" y2="18" />
-                <line x1="6" y1="6" x2="18" y2="18" />
-              </svg>
-            </div> */}
-            <ul className="flex flex-col items-center justify-between min-h-[250px]">
+            <ul className="flex flex-col items-center justify-between min-h-[250px] font-bold">
               <li className="my-8 uppercase text-3xl">
               <a href="#about" className="w-full text-center py-8 hover:opacity-50" onClick={() => setMenuOpen(false)}>About</a>
               </li>
@@ -59,7 +33,7 @@ export default function Nav() {
           </div>
         </section>
 
-        <ul className="DESKTOP-MENU hidden space-x-8 md:flex">
+        <ul className="DESKTOP-MENU hidden space-x-8 md:flex text-white">
           <li>
             <a href="#about">About</a>
           </li>
@@ -91,6 +65,8 @@ export default function Nav() {
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
+        background: linear-gradient(to bottom, #000000, #e7da16, #2e901d);
+
       }
     `}</style>
     </div>
