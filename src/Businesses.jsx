@@ -3,6 +3,10 @@ import apply from './assets/apply-yourself.png'
 import affordableAdvertising from './assets/advertising.png'
 import tanup from './assets/tanup.png'
 import slimchances from './assets/slimchances.png'
+import trwSecurity from './assets/security.jpg'
+import finao from './assets/finao.png'
+import wiggin from './assets/wiggin.png'
+import furrever from './assets/furrever.png'
 
 export default function Businesses()
 {
@@ -18,14 +22,14 @@ export default function Businesses()
           <Carousel slideInterval={5000}>
             <a href="https://www.facebook.com/affordableadvertising20" target="_blank" rel="noreferrer">
               <img
-              className="h-96"
+              className="h-96 w-screen"
               src={affordableAdvertising}
               alt="advertising"
               />
             </a>
             <a href="https://www.facebook.com/Applyyourselfnow876" target="_blank" rel="noreferrer">
               <img
-              className="h-96"
+              className="h-96 w-screen"
               src={apply}
               alt="applyimg"
               />
@@ -39,15 +43,39 @@ export default function Businesses()
             </a>
             <a href="https://www.facebook.com/profile.php?id=100064482830532" target="_blank" rel="noreferrer">
               <img
-                className="h-96"
+                className="h-96 w-screen"
                 src={slimchances}
                 alt="weight-loss"
               />
             </a>
-            <img
-              src="https://flowbite.com/docs/images/carousel/carousel-5.svg"
-              alt="..."
-            />
+            <a href="https://www.facebook.com/profile.php?id=100070131725399" target="_blank" rel="noreferrer">
+              <img
+                className="h-96 w-screen"
+                src={trwSecurity}
+                alt="security-firm"
+              />
+            </a>
+            <a href="https://www.facebook.com/FINAOCONQUERREALTY" target="_blank" rel="noreferrer">
+              <img
+                className="h-96 w-screen"
+                src={finao}
+                alt="real-estate"
+              />
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100063960162770" target="_blank" rel="noreferrer">
+              <img
+                className="h-96 w-screen"
+                src={wiggin}
+                alt="wigs-cosmetics"
+              />
+            </a>
+            <a href="https://www.instagram.com/furreverpuppiesrhewardfhengshu/" target="_blank" rel="noreferrer">
+              <img
+                className="h-96 w-screen"
+                src={furrever}
+                alt="puppies"
+              />
+            </a>
           </Carousel>
         </div>
       </section>
