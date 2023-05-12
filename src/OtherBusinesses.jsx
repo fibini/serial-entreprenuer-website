@@ -10,7 +10,7 @@ export default function OtherBusinesses()
                         Other Businesses
                     </h2>
                 </div>
-                <div className= "grid grid-rows-2 grid-flow-col gap-4">
+                <div className= "flex flex-wrap justify-center">
                     <img src={advertise}/>
                     <img src={advertise}/>
                     <img src={advertise}/>
