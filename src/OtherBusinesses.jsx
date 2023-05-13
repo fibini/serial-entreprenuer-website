@@ -4,8 +4,8 @@ export default function OtherBusinesses()
 {
     return(
         <>
-        <section id="otherbusinesses" className="border-b border-gray-400 pt-16 pb-8">
-                <div className="bg-black text-white text-center py-5">
+        <section id="otherbusinesses" className="flex flex-col items-center border-b border-gray-400 pt-16 pb-8">
+                <div className="bg-black text-white text-center rounded-full w-1/2 py-5 mb-5">
                     <h2 className="text-3xl font-bold lg:text-6xl">
                         Other Businesses
                     </h2>

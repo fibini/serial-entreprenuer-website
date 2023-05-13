@@ -12,13 +12,13 @@ export default function Businesses()
 {
     return(
         <>
-        <section id="businesses" className="pt-16">
-          <div id="busi" className="bg-black text-white">
-          <h2 className="text-3xl font-bold text-center py-5 lg:text-6xl">
-              My Businesses
-          </h2>
+        <section id="businesses" className=" flex flex-col items-center  pt-16">
+          <div id="busi" className="bg-black text-white mb-5 rounded-full w-1/2">
+            <h2 className="text-3xl font-bold text-center py-5 lg:text-6xl">
+                My Businesses
+            </h2>
           </div>
-          <div className=" flex justify-center h-96 lg:h-96">
+          <div className=" flex h-96 lg:h-96 w-screen justify-center">
           <Carousel slideInterval={5000} indicators={false} className="lg:w-1/2">
             <a href="https://www.facebook.com/affordableadvertising20" target="_blank" rel="noreferrer">
               <img
