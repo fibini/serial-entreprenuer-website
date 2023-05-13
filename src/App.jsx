@@ -12,7 +12,7 @@ function App() {
       <section className='bg-gradient-to-b from-black to-green-700 via-yellow-200'>
         <section id="header" className="flex justify-center h-56 pt-20">
           <div className="sm:flex text-center text-white">
-            <h1 className="text-6xl font-bold">
+            <h1 className="text-6xl font-bold lg:text-8xl">
               The Serial Entrepreneur
             </h1>
           </div>

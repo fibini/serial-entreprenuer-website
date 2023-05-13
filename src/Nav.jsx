@@ -33,18 +33,18 @@ export default function Nav() {
           </div>
         </section>
 
-        <ul className="DESKTOP-MENU hidden space-x-8 md:flex text-white">
+        <ul className="DESKTOP-MENU hidden space-x-8 md:flex text-white text-xl">
           <li>
-            <a href="#about">About</a>
+            <a href="#about" className="hover:text-green-700">About</a>
           </li>
           <li>
-            <a href="#businesses">My Businesses</a>
+            <a href="#businesses" className="hover:text-yellow-300">My Businesses</a>
           </li>
           <li>
-            <a href="#otherbusinesses">Other Businesses</a>
+            <a href="#otherbusinesses" className="hover:text-green-700">Other Businesses</a>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <a href="#contact" className="hover:text-yellow-300">Contact</a>
           </li>
         </ul>
       </nav>

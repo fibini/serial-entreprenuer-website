@@ -10,7 +10,7 @@ export default function OtherBusinesses()
                         Other Businesses
                     </h2>
                 </div>
-                <div className= "flex flex-wrap justify-center">
+                <div className= "flex flex-wrap justify-center gap-2">
                     <img src={advertise}/>
                     <img src={advertise}/>
                     <img src={advertise}/>

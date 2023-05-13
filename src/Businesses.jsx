@@ -18,8 +18,8 @@ export default function Businesses()
               My Businesses
           </h2>
           </div>
-          <div className="h-96 2lg:h-96">
-          <Carousel slideInterval={5000}>
+          <div className=" flex justify-center h-96 lg:h-96">
+          <Carousel slideInterval={5000} indicators={false} className="lg:w-1/2">
             <a href="https://www.facebook.com/affordableadvertising20" target="_blank" rel="noreferrer">
               <img
               className="h-96 w-screen"
