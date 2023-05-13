@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body
-{
-  background-color: black;
-}
-
 /* #about
 {
   background-image: url(./assets/jamflag.jpeg);
@@ -79,3 +74,8 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 } */
+
+@font-face {
+  font-family: "burtons";
+  src: url("../public/Burtons.otf");
+}

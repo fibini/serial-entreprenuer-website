@@ -13,9 +13,9 @@ export default function Businesses()
     return(
         <>
         <section id="businesses" className=" flex flex-col items-center  pt-16">
-          <div id="busi" className="bg-black text-white mb-5 rounded-full w-1/2">
-            <h2 className="text-3xl font-bold text-center py-5 lg:text-6xl">
-                My Businesses
+          <div id="busi" className="bg-black text-white mb-5 rounded-full w-1/2  dark:text-black dark:bg-slate-100">
+            <h2 className="text-3xl font-burtons font-md text-center py-5 lg:text-6xl">
+                MY BUSINESSES
             </h2>
           </div>
           <div className=" flex h-96 lg:h-96 w-3/4 justify-center">

@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: "class",
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
@@ -7,6 +8,9 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        burtons: "burtons",
+      },
       screens: {
         'widescreen': { 'raw': '(min-aspect-ratio: 3/2)' },
         'tallscreen': { 'raw': '(min-aspect-ratio: 13/20)' },
