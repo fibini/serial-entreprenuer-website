@@ -14,7 +14,7 @@ export default function Businesses()
         <>
         <section id="businesses" className="pt-16">
           <div id="busi" className="bg-black text-white">
-          <h2 className="text-3xl font-bold text-center py-5">
+          <h2 className="text-3xl font-bold text-center py-5 lg:text-6xl">
               My Businesses
           </h2>
           </div>
