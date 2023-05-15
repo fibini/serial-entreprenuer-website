@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import './index.css'
-// import Nav from './Nav'
 import ceo from './assets/ceo.png'
 import About from './About'
 import Businesses from './Businesses'
@@ -15,36 +14,38 @@ function App() {
   return (
     
     <>
-      {/* <div className={darkMode? "dark": ""}> */}
-        {/* <Nav /> */}
       <div className={darkMode? "dark": ""}>
         <div className="flex items-center justify-between fixed w-full z-10 border-b border-gray-400 py-8 px-10 h-5 bg-black md:px-20 lg:px-40 dark:bg-slate-100">
           <a href="/">
             <img className="object-scale-down h-10" src={ceo} alt="logo" />
           </a>
+          <p>Light</p>
           <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className=" text-white cursor-pointer dark:text-black" />
+          <p className='text-white'>Dark</p>
           <nav>
-            <section className="MOBILE-MENU flex md:hidden">
+            <section className=" MOBILE-MENU flex md:hidden">
               <button id="hamburger-icon" className="text-white text-4xl md:hidden cursor-pointer dark:text-black" onClick={() => setMenuOpen((prev) => !prev)}> &#9776; </button>
-              <div className={menuOpen ? "showMenuNav" : "hideMenuNav"} >
-                <button className="absolute text-8xl top-0 right-0 px-8 py-8" onClick={() => setMenuOpen(false)}>
-                  &times;
-                </button>
-                <ul className="flex flex-col items-center justify-between min-h-[250px] font-bold">
-                  <li className="my-8 uppercase text-3xl">
-                  <a href="#about" className="w-full text-center py-8 hover:opacity-50" onClick={() => setMenuOpen(false)}>About</a>
-                  </li>
-                  <li className = "my-8 uppercase text-3xl">
-                  <a href="#businesses" className="w-full text-center py-8 hover:opacity-50" onClick={() => setMenuOpen(false)}>My Businesses</a>
-                  </li>
-                  <li className="my-8 uppercase text-3xl">
-                  <a href="#otherbusinesses" className="w-full text-center py-8 hover:opacity-50" onClick={() => setMenuOpen(false)}>Other Businesses</a>
-                  </li>
-                  <li className="my-8 uppercase text-3xl">
-                  <a href="#contact" className="w-full text-center py-6 hover:opacity-50" onClick={() => setMenuOpen(false)}>Contact</a>
-                  </li>
-                </ul>
-              </div>
+                {menuOpen && (
+                  <div className='flex flex-col justify-evenly align-middle w-screen h-screen fixed top-0 left-0 z-10 bg-black dark:bg-slate-100 font-burtons'>
+                    <button className=" text-white absolute text-6xl top-0 right-0 px-8 py-8 dark:text-black dark:bg-slate-100" onClick={() => setMenuOpen(false)}>
+                      &times;
+                    </button>
+                    <ul className=" text-white flex flex-col items-center justify-between min-h-[250px] font-bold dark:text-black dark:bg-slate-100">
+                      <li className="my-8 uppercase text-3xl">
+                      <a href="#about" className="w-full text-center py-8 hover:opacity-50" onClick={() => setMenuOpen(false)}>About</a>
+                      </li>
+                      <li className = "my-8 uppercase text-3xl">
+                      <a href="#businesses" className="w-full text-center py-8 hover:opacity-50" onClick={() => setMenuOpen(false)}>My Businesses</a>
+                      </li>
+                      <li className="my-8 uppercase text-3xl">
+                      <a href="#otherbusinesses" className="w-full text-center py-8 hover:opacity-50" onClick={() => setMenuOpen(false)}>Other Businesses</a>
+                      </li>
+                      <li className="my-8 uppercase text-3xl">
+                      <a href="#contact" className="w-full text-center py-6 hover:opacity-50" onClick={() => setMenuOpen(false)}>Contact</a>
+                      </li>
+                    </ul>
+                </div>
+                )}
             </section>
 
             <ul className="DESKTOP-MENU hidden space-x-8 md:flex text-white text-xl dark:text-black">
@@ -73,13 +74,11 @@ function App() {
             height: 100vh;
             top: 0;
             left: 0;
-            background: white;
             z-index: 10;
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
             align-items: center;
-            background: linear-gradient(to bottom, #000000, #e7da16, #2e901d);
 
           }
         `}</style>

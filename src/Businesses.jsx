@@ -22,7 +22,7 @@ export default function Businesses()
   const [trwIsOpen, setTrwIsOpen] = useState(false)
     return(
         <>
-          <section className=" text-white dark:text-black">
+          <section id="businesses" className=" text-white dark:text-black pt-16">
             <h2 className="text-3xl font-burtons font-md text-center py-5 lg:text-6xl">MY BUSINESSES</h2>
             <div className="relative flex flex-col items-center w-auto basis-1/2 mb-5 hover:cursor-pointer">
               <button onClick={() => setFinaoIsOpen((prev) => !prev)} className=" text-2xl p-2 w-full flex items-center justify-between border-2 border-gray-300 rounded-lg mb-1">
