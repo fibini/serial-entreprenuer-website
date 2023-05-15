@@ -64,7 +64,7 @@ export default function Businesses()
                   </div>
                 )}
                 <button onClick={() => setMarketingIsOpen((prev) => !prev)} className=" text-2xl p-2 w-full flex items-center justify-between border-2 border-gray-300 rounded-lg my-1">
-                Affordable Advertising & Marketing
+                Advertising & Marketing
                 {!marketingIsOpen ? (
                   <AiOutlineCaretDown className="h-8" />
                 ): (
