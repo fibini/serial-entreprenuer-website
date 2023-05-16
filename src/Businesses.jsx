@@ -8,7 +8,7 @@ import trwSecurity from './assets/security.jpg'
 import finao from './assets/finao.png'
 import wiggin from './assets/wiggin.png'
 import furrever from './assets/furrever.png'
-import tanuke from './assets/tanuke.png'
+// import tanuke from './assets/tanuke.png'
 import { AiOutlineCaretDown, AiOutlineCaretUp } from "react-icons/ai"
 
 export default function Businesses()
