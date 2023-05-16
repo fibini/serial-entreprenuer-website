@@ -43,6 +43,7 @@ export default function Businesses()
                     alt="real-estate"
                     />
                   </a>
+                  <p className="text-center dark:text-black">WE CATER TO ALL OUR CLIENTS NEEDS, FROM SECURING RENTALS FOR TENANTS, MARKETING PROPERTIES AND A WIDE RANGE OF CONCIERGE SERVICES</p>
                 </div>
               )}
           </div>
@@ -64,6 +65,7 @@ export default function Businesses()
                     alt="puppies"
                     />
                   </a>
+                  <p className=" text-center dark:text-black">DOG BUSINESS PROVIDING QUALITY PUPPIES SMALL AND LARGE FOR FURREVER HOMES, DOG SUPPLES AND ACCESORIES.</p>
                 </div>
               )}
           </div>
@@ -85,6 +87,7 @@ export default function Businesses()
                     alt="advertising"
                     />
                   </a>
+                  <p className="text-center dark:text-black">ADVERTISING AND MARKETING FOR SMALL AND LARGE BUSINESSES</p>
                 </div>
               )}
           </div>
@@ -106,6 +109,7 @@ export default function Businesses()
                     alt="entertainment"
                     />
                   </a>
+                  <p className="text-center dark:text-black">WE AT TANUP ENTERTAINMENT CREATE COMMERCIALS, SONGS, VOICE OVERS, MANAGE SINGERS, DANCERS AND MUSICIANS</p>
                 </div>
               )}
           </div>
@@ -127,6 +131,7 @@ export default function Businesses()
                     alt="weight-loss"
                     />
                   </a>
+                  <p className="text-center dark:text-black">ARE U STRUGGLING TO CHANGE UR LIFE? BAD HABITS? DO U WANT TO BE HEALTHIER? LOSE WEIGHT KEEP IT OFF?</p>
                 </div>
               )}
           </div>
@@ -148,6 +153,7 @@ export default function Businesses()
                     alt="cosmetics"
                     />
                   </a>
+                  <p className="text-center dark:text-black">WIGS AND COSMETICS</p>
                 </div>
               )}
           </div>
@@ -169,6 +175,7 @@ export default function Businesses()
                     alt="recruitment"
                     />
                   </a>
+                  <p className="text-center dark:text-black">WE OFFER CV, COVER LETTER REVISION AND CREATION FOR $100BDS ON SPECIAL AND WE ALSO RECRUIT EMPLOYEES.</p>
                 </div>
               )}
           </div>
@@ -190,14 +197,15 @@ export default function Businesses()
                     alt="security-firm"
                     />
                   </a>
+                  <p className="text-center dark:text-black">SECURE YOUR HOME OR BUSINESS WITH CAMERAS, ALARM SYSTEMS AND SECURITY PATROLS.</p>
                 </div>
               )}
           </div>
         </section>
         <section className="flex flex-wrap items-center justify-evenly">
-          <div className=" hidden lg:w-1/12 lg:block">
+          {/* <div className=" hidden lg:w-1/12 lg:block">
                 <img src={tanuke} alt="" />
-          </div>
+          </div> */}
           <div className="hidden md:flex flex-wrap text-white lg: basis-3/4 gap-2 justify-center">
             <div className="basis-1/2 border-2 rounded-lg border-gray-300 lg:basis-1/4">
               <a href="https://www.facebook.com/affordableadvertising20" target="_blank" rel="noreferrer">
@@ -207,6 +215,7 @@ export default function Businesses()
                 alt="advertising"
                 />
               </a>
+              <p className="text-center dark:text-black">ADVERTISING AND MARKETING FOR SMALL AND LARGE BUSINESSES</p>
             </div>
             <div className="basis-1/2 border-2 rounded-lg border-gray-300 lg:basis-1/4">
               <a href="https://www.facebook.com/Applyyourselfnow876" target="_blank" rel="noreferrer">
@@ -215,6 +224,7 @@ export default function Businesses()
                 src={apply}
                 alt="applyimg"
                 />
+                <p className="text-center dark:text-black">WE OFFER CV, COVER LETTER REVISION AND CREATION FOR $100BDS ON SPECIAL AND WE ALSO RECRUIT EMPLOYEES.</p>
               </a>
             </div>
             <div className="basis-1/2 border-2 rounded-lg border-gray-300 lg:basis-1/4">
@@ -224,6 +234,7 @@ export default function Businesses()
                   src={slimchances}
                   alt="weight-loss"
                 />
+                <p className="text-center dark:text-black">ARE U STRUGGLING TO CHANGE UR LIFE? BAD HABITS? DO U WANT TO BE HEALTHIER? LOSE WEIGHT KEEP IT OFF?</p>
               </a>
             </div>
             <div className="basis-1/2 border-2 rounded-lg border-gray-300 lg:basis-1/4">
@@ -233,6 +244,7 @@ export default function Businesses()
                   src={tanup}
                   alt="tanupent"
                 />
+                <p className="text-center dark:text-black">WE AT TANUP ENTERTAINMENT CREATE COMMERCIALS, SONGS, VOICE OVERS, MANAGE SINGERS, DANCERS AND MUSICIANS</p>
               </a>
             </div>
             <div className="basis-1/2 border-2 rounded-lg border-gray-300 lg:basis-1/4">
@@ -243,6 +255,7 @@ export default function Businesses()
                   alt="real-estate"
                 />
               </a>
+              <p className="text-center dark:text-black">WE CATER TO ALL OUR CLIENTS NEEDS, FROM SECURING RENTALS FOR TENANTS, MARKETING PROPERTIES AND A WIDE RANGE OF CONCIERGE SERVICES</p>
             </div>
             <div className="basis-1/2 border-2 rounded-lg border-gray-300 lg:basis-1/4">
               <a href="https://www.facebook.com/profile.php?id=100063960162770" target="_blank" rel="noreferrer">
@@ -251,6 +264,7 @@ export default function Businesses()
                   src={wiggin}
                   alt="wigs-cosmetics"
                 />
+                <p className="text-center dark:text-black">WIGS AND COSMETICS</p>
               </a>
             </div>
             <div className="basis-1/2 border-2 rounded-lg border-gray-300 lg:basis-1/4">
@@ -260,6 +274,7 @@ export default function Businesses()
                   src={trwSecurity}
                   alt="security-firm"
                 />
+                <p className="text-center dark:text-black">SECURE YOUR HOME OR BUSINESS WITH CAMERAS, ALARM SYSTEMS AND SECURITY PATROLS.</p>
               </a>
             </div>
             <div className="basis-1/2 border-2 rounded-lg border-gray-300 lg:basis-1/4">
@@ -269,12 +284,13 @@ export default function Businesses()
                   src={furrever}
                   alt="puppies"
                 />
+                <p className=" text-center dark:text-black">DOG BUSINESS PROVIDING QUALITY PUPPIES SMALL AND LARGE FOR FURREVER HOMES, DOG SUPPLES AND ACCESORIES.</p>
               </a>
             </div>
           </div> 
-          <div className="hidden lg:basis-1/12 lg:block">
+          {/* <div className="hidden lg:basis-1/12 lg:block">
               <img src={tanuke} alt="" />
-          </div>
+          </div> */}
         </section> 
       </>
     )
