@@ -8,6 +8,7 @@ import trwSecurity from './assets/security.jpg'
 import finao from './assets/finao.png'
 import wiggin from './assets/wiggin.png'
 import furrever from './assets/furrever.png'
+import tanuke from './assets/tanuke.png'
 import { AiOutlineCaretDown, AiOutlineCaretUp } from "react-icons/ai"
 
 export default function Businesses()
@@ -68,7 +69,7 @@ export default function Businesses()
           </div>
           <div className=" relative inline-block w-full hover:cursor-pointer md:hidden">
               <button onClick={() => setMarketingIsOpen((prev) => !prev)} className=" text-2xl p-2 w-full flex items-center justify-between border-2 border-gray-300 rounded-lg my-1">
-              Advertising & Marketing
+              Affordable Advertising & Marketing
               {!marketingIsOpen ? (
                 <AiOutlineCaretDown className="h-8" />
               ): (
@@ -152,7 +153,7 @@ export default function Businesses()
           </div>
           <div className=" relative inline-block w-full hover:cursor-pointer md:hidden">
               <button onClick={() => setApplyIsOpen((prev) => !prev)} className=" text-2xl p-2 w-full flex items-center justify-between border-2 border-gray-300 rounded-lg my-1">
-              Apply Yourself
+              Apply Yourself Now
               {!applyIsOpen ? (
                 <AiOutlineCaretDown className="h-8" />
               ): (
@@ -193,80 +194,88 @@ export default function Businesses()
               )}
           </div>
         </section>
-        <div className="hidden md:flex flex-wrap text-white">
-          <div className="basis-1/2 border-2 rounded-lg border-gray-300 lg:basis-1/4">
-            <a href="https://www.facebook.com/affordableadvertising20" target="_blank" rel="noreferrer">
-              <img
-              className="h-96 w-screen"
-              src={affordableAdvertising}
-              alt="advertising"
-              />
-            </a>
+        <section className="flex flex-wrap items-center justify-evenly">
+          <div className=" hidden lg:w-1/12 lg:block">
+                <img src={tanuke} alt="" />
           </div>
-          <div className="basis-1/2 border-2 rounded-lg border-gray-300 lg:basis-1/4">
-            <a href="https://www.facebook.com/Applyyourselfnow876" target="_blank" rel="noreferrer">
-              <img
-              className="h-96 w-screen"
-              src={apply}
-              alt="applyimg"
-              />
-            </a>
-          </div>
-          <div className="basis-1/2 border-2 rounded-lg border-gray-300 lg:basis-1/4">
-            <a href="https://www.facebook.com/profile.php?id=100064482830532" target="_blank" rel="noreferrer">
-              <img
+          <div className="hidden md:flex flex-wrap text-white lg: basis-3/4 gap-2 justify-center">
+            <div className="basis-1/2 border-2 rounded-lg border-gray-300 lg:basis-1/4">
+              <a href="https://www.facebook.com/affordableadvertising20" target="_blank" rel="noreferrer">
+                <img
                 className="h-96 w-screen"
-                src={slimchances}
-                alt="weight-loss"
-              />
-            </a>
-          </div>
-          <div className="basis-1/2 border-2 rounded-lg border-gray-300 lg:basis-1/4">
-            <a href="https://www.facebook.com/profile.php?id=100064144205268" target="_blank" rel="noreferrer">
-              <img
+                src={affordableAdvertising}
+                alt="advertising"
+                />
+              </a>
+            </div>
+            <div className="basis-1/2 border-2 rounded-lg border-gray-300 lg:basis-1/4">
+              <a href="https://www.facebook.com/Applyyourselfnow876" target="_blank" rel="noreferrer">
+                <img
                 className="h-96 w-screen"
-                src={tanup}
-                alt="tanupent"
-              />
-            </a>
+                src={apply}
+                alt="applyimg"
+                />
+              </a>
+            </div>
+            <div className="basis-1/2 border-2 rounded-lg border-gray-300 lg:basis-1/4">
+              <a href="https://www.facebook.com/profile.php?id=100064482830532" target="_blank" rel="noreferrer">
+                <img
+                  className="h-96 w-screen"
+                  src={slimchances}
+                  alt="weight-loss"
+                />
+              </a>
+            </div>
+            <div className="basis-1/2 border-2 rounded-lg border-gray-300 lg:basis-1/4">
+              <a href="https://www.facebook.com/profile.php?id=100064144205268" target="_blank" rel="noreferrer">
+                <img
+                  className="h-96 w-screen"
+                  src={tanup}
+                  alt="tanupent"
+                />
+              </a>
+            </div>
+            <div className="basis-1/2 border-2 rounded-lg border-gray-300 lg:basis-1/4">
+              <a href="https://www.facebook.com/FINAOCONQUERREALTY" target="_blank" rel="noreferrer">
+                <img
+                  className="h-96 w-screen"
+                  src={finao}
+                  alt="real-estate"
+                />
+              </a>
+            </div>
+            <div className="basis-1/2 border-2 rounded-lg border-gray-300 lg:basis-1/4">
+              <a href="https://www.facebook.com/profile.php?id=100063960162770" target="_blank" rel="noreferrer">
+                <img
+                  className="h-96 w-screen"
+                  src={wiggin}
+                  alt="wigs-cosmetics"
+                />
+              </a>
+            </div>
+            <div className="basis-1/2 border-2 rounded-lg border-gray-300 lg:basis-1/4">
+              <a href="https://www.facebook.com/profile.php?id=100070131725399" target="_blank" rel="noreferrer">
+                <img
+                  className="h-96 w-screen"
+                  src={trwSecurity}
+                  alt="security-firm"
+                />
+              </a>
+            </div>
+            <div className="basis-1/2 border-2 rounded-lg border-gray-300 lg:basis-1/4">
+              <a href="https://www.instagram.com/furreverpuppiesrhewardfhengshu/" target="_blank" rel="noreferrer">
+                <img
+                  className="h-96 w-screen"
+                  src={furrever}
+                  alt="puppies"
+                />
+              </a>
+            </div>
+          </div> 
+          <div className="hidden lg:basis-1/12 lg:block">
+              <img src={tanuke} alt="" />
           </div>
-          <div className="basis-1/2 border-2 rounded-lg border-gray-300 lg:basis-1/4">
-            <a href="https://www.facebook.com/FINAOCONQUERREALTY" target="_blank" rel="noreferrer">
-              <img
-                className="h-96 w-screen"
-                src={finao}
-                alt="real-estate"
-              />
-            </a>
-          </div>
-          <div className="basis-1/2 border-2 rounded-lg border-gray-300 lg:basis-1/4">
-            <a href="https://www.facebook.com/profile.php?id=100063960162770" target="_blank" rel="noreferrer">
-              <img
-                className="h-96 w-screen"
-                src={wiggin}
-                alt="wigs-cosmetics"
-              />
-            </a>
-          </div>
-          <div className="basis-1/2 border-2 rounded-lg border-gray-300 lg:basis-1/4">
-            <a href="https://www.facebook.com/profile.php?id=100070131725399" target="_blank" rel="noreferrer">
-              <img
-                className="h-96 w-screen"
-                src={trwSecurity}
-                alt="security-firm"
-              />
-            </a>
-          </div>
-          <div className="basis-1/2 border-2 rounded-lg border-gray-300 lg:basis-1/4">
-            <a href="https://www.instagram.com/furreverpuppiesrhewardfhengshu/" target="_blank" rel="noreferrer">
-              <img
-                className="h-96 w-screen"
-                src={furrever}
-                alt="puppies"
-              />
-            </a>
-          </div>
-        </div>  
+        </section> 
       </>
     )
 }
