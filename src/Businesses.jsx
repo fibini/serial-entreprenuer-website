@@ -1,5 +1,4 @@
 import { useState } from "react"
-// import { Carousel } from "flowbite-react"
 import apply from './assets/apply-yourself.png'
 import affordableAdvertising from './assets/advertising.png'
 import tanup from './assets/tanup.png'
@@ -8,11 +7,11 @@ import trwSecurity from './assets/security.jpg'
 import finao from './assets/finao.png'
 import wiggin from './assets/wiggin.png'
 import furrever from './assets/furrever.png'
-// import tanuke from './assets/tanuke.png'
 import { AiOutlineCaretDown, AiOutlineCaretUp } from "react-icons/ai"
 
 export default function Businesses()
 {
+  //Dropdown businesses
   const [finaoIsOpen, setFinaoIsOpen] = useState(false)
   const [furreverIsOpen, setFurrverIsOpen] = useState(false)
   const [marketingIsOpen, setMarketingIsOpen] = useState(false)
@@ -21,8 +20,21 @@ export default function Businesses()
   const [wigginIsOpen, setWigginIsOpen] = useState(false)
   const [applyIsOpen, setApplyIsOpen] = useState(false)
   const [trwIsOpen, setTrwIsOpen] = useState(false)
+
+  //Business descriptions
+  const realEstate = "WE CATER TO ALL OUR CLIENTS NEEDS, FROM SECURING RENTALS FOR TENANTS, MARKETING PROPERTIES AND A WIDE RANGE OF CONCIERGE SERVICES."
+  const furPups = "A DOG BUSINESS PROVIDING QUALITY PUPPIES SMALL AND LARGE FOR FURREVER HOMES, DOG SUPPLES AND ACCESORIES."
+  const marketing = "ADVERTISING AND MARKETING FOR SMALL AND LARGE BUSINESSES."
+  const entertainment = "WE AT TANUP ENTERTAINMENT CREATE COMMERCIALS, SONGS, VOICE OVERS, MANAGE SINGERS, DANCERS AND MUSICIANS."
+  const weightLoss = "ARE YOU STRUGGLING TO CHANGE YOUR LIFE? BAD HABITS? DO YOU WANT TO BE HEALTHIER? LOSE WEIGHT KEEP IT OFF? THEN THIS IS THE PLACE FOR YOU."
+  const cosmetics = "GET YOUR WIGS AND COSMETICS HERE!"
+  const recruiting = "AT APPLY YOUSELF NOW WE OFFER CV AND COVER LETTER REVISION AND CREATION FOR $100BDS ON SPECIAL AND WE ALSO RECRUIT EMPLOYEES."
+  const trw = "SECURE YOUR HOME OR BUSINESS WITH CAMERAS, ALARM SYSTEMS AND SECURITY PATROLS."
+
     return(
       <>
+      {/* Mobile view */}
+
         <section id="businesses" className=" text-white dark:text-black pt-16">
           <h2 className="text-3xl font-burtons font-md text-center py-5 lg:text-6xl">MY BUSINESSES</h2>
           <div className="relative inline-block w-full hover:cursor-pointer md:hidden">
@@ -43,7 +55,7 @@ export default function Businesses()
                     alt="real-estate"
                     />
                   </a>
-                  <p className="text-center dark:text-black">WE CATER TO ALL OUR CLIENTS NEEDS, FROM SECURING RENTALS FOR TENANTS, MARKETING PROPERTIES AND A WIDE RANGE OF CONCIERGE SERVICES</p>
+                  <p className="text-center dark:text-black">{realEstate}</p>
                 </div>
               )}
           </div>
@@ -65,7 +77,7 @@ export default function Businesses()
                     alt="puppies"
                     />
                   </a>
-                  <p className=" text-center dark:text-black">DOG BUSINESS PROVIDING QUALITY PUPPIES SMALL AND LARGE FOR FURREVER HOMES, DOG SUPPLES AND ACCESORIES.</p>
+                  <p className=" text-center dark:text-black">{furPups}</p>
                 </div>
               )}
           </div>
@@ -87,7 +99,7 @@ export default function Businesses()
                     alt="advertising"
                     />
                   </a>
-                  <p className="text-center dark:text-black">ADVERTISING AND MARKETING FOR SMALL AND LARGE BUSINESSES</p>
+                  <p className="text-center dark:text-black">{marketing}</p>
                 </div>
               )}
           </div>
@@ -109,7 +121,7 @@ export default function Businesses()
                     alt="entertainment"
                     />
                   </a>
-                  <p className="text-center dark:text-black">WE AT TANUP ENTERTAINMENT CREATE COMMERCIALS, SONGS, VOICE OVERS, MANAGE SINGERS, DANCERS AND MUSICIANS</p>
+                  <p className="text-center dark:text-black">{entertainment}</p>
                 </div>
               )}
           </div>
@@ -131,7 +143,7 @@ export default function Businesses()
                     alt="weight-loss"
                     />
                   </a>
-                  <p className="text-center dark:text-black">ARE U STRUGGLING TO CHANGE UR LIFE? BAD HABITS? DO U WANT TO BE HEALTHIER? LOSE WEIGHT KEEP IT OFF?</p>
+                  <p className="text-center dark:text-black">{weightLoss}</p>
                 </div>
               )}
           </div>
@@ -153,7 +165,7 @@ export default function Businesses()
                     alt="cosmetics"
                     />
                   </a>
-                  <p className="text-center dark:text-black">WIGS AND COSMETICS</p>
+                  <p className="text-center dark:text-black">{cosmetics}</p>
                 </div>
               )}
           </div>
@@ -175,7 +187,7 @@ export default function Businesses()
                     alt="recruitment"
                     />
                   </a>
-                  <p className="text-center dark:text-black">WE OFFER CV, COVER LETTER REVISION AND CREATION FOR $100BDS ON SPECIAL AND WE ALSO RECRUIT EMPLOYEES.</p>
+                  <p className="text-center dark:text-black">{recruiting}</p>
                 </div>
               )}
           </div>
@@ -197,15 +209,15 @@ export default function Businesses()
                     alt="security-firm"
                     />
                   </a>
-                  <p className="text-center dark:text-black">SECURE YOUR HOME OR BUSINESS WITH CAMERAS, ALARM SYSTEMS AND SECURITY PATROLS.</p>
+                  <p className="text-center dark:text-black">{trw}</p>
                 </div>
               )}
           </div>
         </section>
+
+        {/* Desktop view */}
+
         <section className="flex flex-wrap items-center justify-evenly">
-          {/* <div className=" hidden lg:w-1/12 lg:block">
-                <img src={tanuke} alt="" />
-          </div> */}
           <div className="hidden md:flex flex-wrap text-white lg: basis-3/4 gap-2 justify-center">
             <div className="basis-1/2 border-2 rounded-lg border-gray-300 lg:basis-1/4">
               <a href="https://www.facebook.com/affordableadvertising20" target="_blank" rel="noreferrer">
@@ -215,7 +227,7 @@ export default function Businesses()
                 alt="advertising"
                 />
               </a>
-              <p className="text-center dark:text-black">ADVERTISING AND MARKETING FOR SMALL AND LARGE BUSINESSES</p>
+              <p className="text-center dark:text-black">{marketing}</p>
             </div>
             <div className="basis-1/2 border-2 rounded-lg border-gray-300 lg:basis-1/4">
               <a href="https://www.facebook.com/Applyyourselfnow876" target="_blank" rel="noreferrer">
@@ -224,7 +236,7 @@ export default function Businesses()
                 src={apply}
                 alt="applyimg"
                 />
-                <p className="text-center dark:text-black">WE OFFER CV, COVER LETTER REVISION AND CREATION FOR $100BDS ON SPECIAL AND WE ALSO RECRUIT EMPLOYEES.</p>
+                <p className="text-center dark:text-black">{recruiting}</p>
               </a>
             </div>
             <div className="basis-1/2 border-2 rounded-lg border-gray-300 lg:basis-1/4">
@@ -234,7 +246,7 @@ export default function Businesses()
                   src={slimchances}
                   alt="weight-loss"
                 />
-                <p className="text-center dark:text-black">ARE U STRUGGLING TO CHANGE UR LIFE? BAD HABITS? DO U WANT TO BE HEALTHIER? LOSE WEIGHT KEEP IT OFF?</p>
+                <p className="text-center dark:text-black">{weightLoss}</p>
               </a>
             </div>
             <div className="basis-1/2 border-2 rounded-lg border-gray-300 lg:basis-1/4">
@@ -244,7 +256,7 @@ export default function Businesses()
                   src={tanup}
                   alt="tanupent"
                 />
-                <p className="text-center dark:text-black">WE AT TANUP ENTERTAINMENT CREATE COMMERCIALS, SONGS, VOICE OVERS, MANAGE SINGERS, DANCERS AND MUSICIANS</p>
+                <p className="text-center dark:text-black">{entertainment}</p>
               </a>
             </div>
             <div className="basis-1/2 border-2 rounded-lg border-gray-300 lg:basis-1/4">
@@ -255,7 +267,7 @@ export default function Businesses()
                   alt="real-estate"
                 />
               </a>
-              <p className="text-center dark:text-black">WE CATER TO ALL OUR CLIENTS NEEDS, FROM SECURING RENTALS FOR TENANTS, MARKETING PROPERTIES AND A WIDE RANGE OF CONCIERGE SERVICES</p>
+              <p className="text-center dark:text-black">{realEstate}</p>
             </div>
             <div className="basis-1/2 border-2 rounded-lg border-gray-300 lg:basis-1/4">
               <a href="https://www.facebook.com/profile.php?id=100063960162770" target="_blank" rel="noreferrer">
@@ -264,7 +276,7 @@ export default function Businesses()
                   src={wiggin}
                   alt="wigs-cosmetics"
                 />
-                <p className="text-center dark:text-black">WIGS AND COSMETICS</p>
+                <p className="text-center dark:text-black">{cosmetics}</p>
               </a>
             </div>
             <div className="basis-1/2 border-2 rounded-lg border-gray-300 lg:basis-1/4">
@@ -274,7 +286,7 @@ export default function Businesses()
                   src={trwSecurity}
                   alt="security-firm"
                 />
-                <p className="text-center dark:text-black">SECURE YOUR HOME OR BUSINESS WITH CAMERAS, ALARM SYSTEMS AND SECURITY PATROLS.</p>
+                <p className="text-center dark:text-black">{trw}</p>
               </a>
             </div>
             <div className="basis-1/2 border-2 rounded-lg border-gray-300 lg:basis-1/4">
@@ -288,9 +300,6 @@ export default function Businesses()
               </a>
             </div>
           </div> 
-          {/* <div className="hidden lg:basis-1/12 lg:block">
-              <img src={tanuke} alt="" />
-          </div> */}
         </section> 
       </>
     )
