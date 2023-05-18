@@ -35,7 +35,7 @@ export default function Businesses()
       <>
       {/* Mobile view */}
 
-        <section id="businesses" className=" text-white dark:text-black pt-16">
+        <section id="businesses" className=" text-white dark:text-black pt-16 mx-5">
           <h2 className="text-3xl font-burtons font-md text-center py-5 lg:text-6xl">MY BUSINESSES</h2>
           <div className="relative inline-block w-full hover:cursor-pointer md:hidden">
             <button onClick={() => setFinaoIsOpen((prev) => !prev)} className=" text-2xl p-2 w-full flex items-center justify-between border-2 border-gray-300 rounded-lg mb-1">
@@ -299,7 +299,7 @@ export default function Businesses()
                 <p className=" text-center dark:text-black">DOG BUSINESS PROVIDING QUALITY PUPPIES SMALL AND LARGE FOR FURREVER HOMES, DOG SUPPLES AND ACCESORIES.</p>
               </a>
             </div>
-          </div> 
+          </div>
         </section> 
       </>
     )

@@ -7,6 +7,7 @@ import OtherBusinesses from './OtherBusinesses'
 import Contact from './Contact'
 import {BsFillMoonStarsFill, BsFillSunFill} from 'react-icons/bs'
 import {AiFillFacebook, AiFillLinkedin, AiFillInstagram} from 'react-icons/ai'
+import Reviews from './customerReviews'
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -95,6 +96,7 @@ function App() {
           </section>
           <About />
           <Businesses />
+          <Reviews />
           <OtherBusinesses />
           <Contact />
         </section>
