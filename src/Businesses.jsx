@@ -35,7 +35,7 @@ export default function Businesses()
       <>
       {/* Mobile view */}
 
-        <section id="businesses" className=" text-white dark:text-black pt-16 mx-5">
+        <section id="businesses" className=" text-white dark:text-black pt-16 mx-5 border-b border-zinc-400 pb-10">
           <h2 className="text-3xl font-burtons font-md text-center py-5 lg:text-6xl">MY BUSINESSES</h2>
           <div className="relative inline-block w-full hover:cursor-pointer md:hidden">
             <button onClick={() => setFinaoIsOpen((prev) => !prev)} className=" text-2xl p-2 w-full flex items-center justify-between border-2 border-amber-500 rounded-lg mb-1">
@@ -217,7 +217,7 @@ export default function Businesses()
 
         {/* Desktop view */}
 
-        <section className="flex flex-wrap items-center justify-evenly">
+        <section className="flex flex-wrap items-center justify-evenly border-b border-zinc-400 pb-10">
           <div className="hidden md:flex flex-wrap text-white lg: basis-3/4 gap-2 justify-center">
             <div className="basis-1/2 border-2 rounded-lg border-gray-300 lg:basis-1/4">
               <a href="https://www.facebook.com/affordableadvertising20" target="_blank" rel="noreferrer">

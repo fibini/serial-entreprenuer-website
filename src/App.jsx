@@ -26,7 +26,7 @@ function App() {
           <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className=" hidden cursor-pointer dark:block"/>
           <nav>
             <section className=" MOBILE-MENU flex md:hidden">
-              <button id="hamburger-icon" className="text-amber-500 text-4xl md:hidden cursor-pointer dark:text-black" onClick={() => setMenuOpen((prev) => !prev)}> &#9776; </button>
+              <button id="hamburger-icon" className="text-amber-500 text-4xl md:hidden cursor-pointer " onClick={() => setMenuOpen((prev) => !prev)}> &#9776; </button>
                 {menuOpen && (
                   <div className='flex flex-col justify-evenly align-middle w-screen h-screen fixed top-0 left-0 z-10 bg-black dark:bg-slate-100 font-burtons'>
                     <button className=" text-amber-500 absolute text-6xl top-0 right-0 px-8 py-8 dark:text-black dark:bg-slate-100" onClick={() => setMenuOpen(false)}>
@@ -35,7 +35,7 @@ function App() {
 
                     {/* Mobile */}
                     
-                    <ul className=" text-white flex flex-col items-center justify-between min-h-[250px] font-bold dark:text-black dark:bg-slate-100">
+                    <ul className=" text-amber-500 flex flex-col items-center justify-between min-h-[250px] font-bold dark:bg-slate-100">
                       <li className="my-8 uppercase text-3xl">
                       <a href="#about" className="w-full text-center py-8 hover:opacity-50" onClick={() => setMenuOpen(false)}>About</a>
                       </li>
@@ -57,16 +57,16 @@ function App() {
 
             <ul className="DESKTOP-MENU hidden space-x-8 md:flex text-white text-xl dark:text-black">
               <li>
-                <a href="#about" className="hover:text-green-700">About</a>
+                <a href="#about" className="hover:text-amber-500">About</a>
               </li>
               <li>
-                <a href="#businesses" className="hover:text-yellow-300">My Businesses</a>
+                <a href="#businesses" className="hover:text-amber-500">My Businesses</a>
               </li>
               <li>
-                <a href="#otherbusinesses" className="hover:text-green-700">Other Businesses</a>
+                <a href="#otherbusinesses" className="hover:text-amber-500">Other Businesses</a>
               </li>
               <li>
-                <a href="#contact" className="hover:text-yellow-300">Contact</a>
+                <a href="#contact" className="hover:text-amber-500">Contact</a>
               </li>
             </ul>
           </nav>
