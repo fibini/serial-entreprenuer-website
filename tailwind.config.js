@@ -26,6 +26,9 @@ export default {
         'open-menu': 'open-menu 0.5s ease-in-out forwards',
       }
     },
+    // colors:{
+    //   'yell': '#fb9d00'
+    // }
   },
   plugins: [
     require('flowbite/plugin.js')

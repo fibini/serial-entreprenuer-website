@@ -38,7 +38,7 @@ export default function Businesses()
         <section id="businesses" className=" text-white dark:text-black pt-16 mx-5">
           <h2 className="text-3xl font-burtons font-md text-center py-5 lg:text-6xl">MY BUSINESSES</h2>
           <div className="relative inline-block w-full hover:cursor-pointer md:hidden">
-            <button onClick={() => setFinaoIsOpen((prev) => !prev)} className=" text-2xl p-2 w-full flex items-center justify-between border-2 border-gray-300 rounded-lg mb-1">
+            <button onClick={() => setFinaoIsOpen((prev) => !prev)} className=" text-2xl p-2 w-full flex items-center justify-between border-2 border-amber-500 rounded-lg mb-1">
               Finao Conquer Realty
               {!finaoIsOpen ? (
                 <AiOutlineCaretDown className="h-8" />
@@ -60,7 +60,7 @@ export default function Businesses()
               )}
           </div>
           <div className="relative inline-block w-full hover:cursor-pointer md:hidden">
-              <button onClick={() => setFurrverIsOpen((prev) => !prev)} className=" text-2xl p-2 w-full flex items-center justify-between border-2 border-gray-300 rounded-lg my-1">
+              <button onClick={() => setFurrverIsOpen((prev) => !prev)} className=" text-2xl p-2 w-full flex items-center justify-between border-2 border-amber-500 rounded-lg my-1">
               Furrever Puppies
               {!furreverIsOpen ? (
                 <AiOutlineCaretDown className="h-8" />
@@ -82,7 +82,7 @@ export default function Businesses()
               )}
           </div>
           <div className=" relative inline-block w-full hover:cursor-pointer md:hidden">
-              <button onClick={() => setMarketingIsOpen((prev) => !prev)} className=" text-2xl p-2 w-full flex items-center justify-between border-2 border-gray-300 rounded-lg my-1">
+              <button onClick={() => setMarketingIsOpen((prev) => !prev)} className=" text-2xl p-2 w-full flex items-center justify-between border-2 border-amber-500 rounded-lg my-1">
               Affordable Advertising & Marketing
               {!marketingIsOpen ? (
                 <AiOutlineCaretDown className="h-8" />
@@ -104,7 +104,7 @@ export default function Businesses()
               )}
           </div>
           <div className=" relative inline-block w-full hover:cursor-pointer md:hidden">
-              <button onClick={() => setTanupIsOpen((prev) => !prev)} className=" text-2xl p-2 w-full flex items-center justify-between border-2 border-gray-300 rounded-lg my-1">
+              <button onClick={() => setTanupIsOpen((prev) => !prev)} className=" text-2xl p-2 w-full flex items-center justify-between border-2 border-amber-500 rounded-lg my-1">
               Tanup Entertainment
               {!tanupIsOpen ? (
                 <AiOutlineCaretDown className="h-8" />
@@ -126,7 +126,7 @@ export default function Businesses()
               )}
           </div>
           <div className=" relative inline-block w-full hover:cursor-pointer md:hidden">
-              <button onClick={() => setSlimChancesIsOpen((prev) => !prev)} className=" text-2xl p-2 w-full flex items-center justify-between border-2 border-gray-300 rounded-lg my-1">
+              <button onClick={() => setSlimChancesIsOpen((prev) => !prev)} className=" text-2xl p-2 w-full flex items-center justify-between border-2 border-amber-500 rounded-lg my-1">
               Slim Chances
               {!slimChancesIsOpen ? (
                 <AiOutlineCaretDown className="h-8" />
@@ -148,7 +148,7 @@ export default function Businesses()
               )}
           </div>
           <div className=" relative inline-block w-full hover:cursor-pointer md:hidden">
-              <button onClick={() => setWigginIsOpen((prev) => !prev)} className=" text-2xl p-2 w-full flex items-center justify-between border-2 border-gray-300 rounded-lg my-1">
+              <button onClick={() => setWigginIsOpen((prev) => !prev)} className=" text-2xl p-2 w-full flex items-center justify-between border-2 border-amber-500 rounded-lg my-1">
               Wiggin Out
               {!wigginIsOpen ? (
                 <AiOutlineCaretDown className="h-8" />
@@ -170,7 +170,7 @@ export default function Businesses()
               )}
           </div>
           <div className=" relative inline-block w-full hover:cursor-pointer md:hidden">
-              <button onClick={() => setApplyIsOpen((prev) => !prev)} className=" text-2xl p-2 w-full flex items-center justify-between border-2 border-gray-300 rounded-lg my-1">
+              <button onClick={() => setApplyIsOpen((prev) => !prev)} className=" text-2xl p-2 w-full flex items-center justify-between border-2 border-amber-500 rounded-lg my-1">
               Apply Yourself Now
               {!applyIsOpen ? (
                 <AiOutlineCaretDown className="h-8" />
@@ -192,7 +192,7 @@ export default function Businesses()
               )}
           </div>
           <div className=" relative inline-block w-full hover:cursor-pointer md:hidden">
-              <button onClick={() => setTrwIsOpen((prev) => !prev)} className=" text-2xl p-2 w-full flex items-center justify-between border-2 border-gray-300 rounded-lg my-1">
+              <button onClick={() => setTrwIsOpen((prev) => !prev)} className=" text-2xl p-2 w-full flex items-center justify-between border-2 border-amber-500 rounded-lg my-1">
               TRW Security
               {!trwIsOpen ? (
                 <AiOutlineCaretDown className="h-8" />
